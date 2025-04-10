@@ -5,7 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span>
+        {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
         {{ site.title }}
@@ -23,13 +24,12 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
             {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true
           %}
         {% endif %}
         {% if page.profile.more_info %}
@@ -39,32 +39,181 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+    <p align=center margin=0px>
+                <a href="mailto:amoagraw@amazon.com">Email</a> /
+                <a href="https://scholar.google.com/citations?user=FNpPnd0AAAAJ&hl=en">Google Scholar</a> /
+                <a href="https://www.linkedin.com/in/agrawalamod"> LinkedIn </a> /
+                <a href="https://www.semanticscholar.org/author/A.-Agrawal/2075308407">Semantic Scholar</a> /
+                <a href="https://www.orcid.org/0009-0001-9732-1024">ORCID</a> /
+                <a href="https://drive.google.com/file/d/1Wnmd-ZBHnBfIzk8BGdBGdWLS-ffOrOp-/view?usp=sharing">CV</a> 
+
+    </p>
+    <!-- Timeline Career Banner -->
+     <!-- 
+    <div class="timeline-banner my-5" style="margin-left: -70px; margin-right: -70px;">
+      <img
+        src="{{ 'assets/img/timeline_banner.png' | relative_url }}"
+        alt="Career Timeline"
+        class="img-fluid"
+        style="max-width: 100%; height: auto;">
+    </div>
+    -->
+    <table
+        width="120%"
+        align="center"
+        style="margin-top: 100px; margin-left: -70px; margin-right: -70px;">
+        <tr>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/amazon-lab126-logo.png"
+              width="80%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/uiuc-logo.png"
+              width="100%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/amazon-lab126-logo.png"
+              width="80%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/csl-logo.png"
+              width="100%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/microsoft-research-logo.png"
+              width="100%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/precog-logo.png"
+              width="90%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/ibm-research-logo.png"
+              width="100%"
+              style="display: block; margin: auto;">
+          </td>
+
+          <td
+            align="center"
+            width="12.5%"
+            style="vertical-align: middle; background-color: rgba(255, 255, 255, 1);">
+            <img
+              src="assets/img/iiitd-logo.png"
+              width="70%"
+              style="display: block; margin: auto;">
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            Applied Scientist<br><b>Amazon Lab126</b><br>2019 -
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            M.S.,<br>Computer Science<br><b>University of Illinois,<br>Urbana-Champaign</b><br>2017 - 2019
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            Intern<br><b>Amazon Lab126</b><br>Summer 2018
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            Graduate Researcher<br><b>SiNRG @<br>Coordinated<br>Science Lab</b><br>2017 - 2019
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            Research Intern,<br><b>Microsoft Research</b><br>May 2016 -<br>Aug 2017
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            Researcher,<br><b>PreCog Research<br>@ IIIT-Delhi</b><br>2015 - 2017
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            Research Intern,<br><b>IBM Research Labs</b><br>Summer 2015
+          </td>
+
+          <td align="center" style="vertical-align: top; background-color: rgba(255, 255, 255, 1); font-size: 14px; color: #333333;">
+            B. Tech.,<br>Computer Science & Engineering<br><b>IIIT-Delhi</b><br>2013 - 2017
+          </td>
+        </tr>
+      </table>
+    </div>
+
 
     <!-- News -->
+     <!--
     {% if page.announcements and page.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
+    -->
 
     <!-- Latest posts -->
+     <!--
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
+    -->
 
     <!-- Selected papers -->
+     <!--
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+    -->
 
     <!-- Social -->
+     <!--
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
@@ -72,6 +221,7 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+    -->
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
