@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-3 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -195,6 +195,12 @@
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+      {% endif %}
+      {% if entry.url and entry.url contains 'http' %}
+        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">URL</a>
+      {% endif %}
+      {% if entry.slides and entry.sides contains 'http' %}
+        <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>

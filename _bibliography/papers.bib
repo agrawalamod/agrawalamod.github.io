@@ -2,7 +2,7 @@
 ---
 @Article{garcia2018collective,
   bibtex_show = {true},
-  abbr        = {EPJ Data Science},
+  abbr        = {Springer EPJ Data Science},
   title       = {Collective aspects of privacy in the online network},
   author      = {David Garcia and Mansi Goel and Amod K. Agrawal and Ponnurangam Kumaraguru},
   abstract    = {Preserving individual control over private information is one of the rising concerns in our digital society. Online social networks exist in application ecosystems that allow them to access data from other services, for example gathering contact lists through mobile phone applications. Such data access might allow social networking sites to create shadow profiles with information about non-users that has been inferred from information shared by the users of the social network. This possibility motivates the shadow profile hypothesis: the data shared by the users of an online service predicts personal information of non-users of the service. We test this hypothesis for the first time on Twitter, constructing a dataset of users that includes profile biographical text, location information, and bidirectional friendship links. We evaluate the predictability of the location of a user by using only information given by friends of the user that joined Twitter before the user did. This way, we audit the historical prediction power of Twitter data for users that had not joined Twitter yet. Our results indicate that information shared by users in Twitter can be predictive of the location of individuals outside Twitter. Furthermore, we observe that the quality of this prediction increases with the tendency of Twitter users to share their mobile phone contacts and is more accurate for individuals with more contacts inside Twitter. We further explore the predictability of biographical information of non-users, finding evidence in line with our results for locations. These findings illustrate that individuals are not in full control of their online privacy and that sharing personal data with a social networking site is a decision that is collectively mediated by the decisions of others.},
@@ -12,7 +12,7 @@
   pages       = {1--13},
   year        = {2018},
   publisher   = {SpringerOpen},
-  doi         = {10.1140/epjds/s13688-018-0145-0}
+  doi         = {https://doi.org/10.1140/epjds/s13688-018-0130-3}
 }
 @Article{veit2015optimizing,
   bibtex_show = {true},
@@ -23,7 +23,8 @@
   journal     = {arXiv preprint},
   volume      = {arXiv:1509.07543},
   year        = {2015},
-  url         = {https://arxiv.org/abs/1509.07543}
+  url         = {https://arxiv.org/abs/1509.07543},
+  doi         = {https://doi.org/10.48550/arXiv.1509.07543}
 }
 
 @MastersThesis{agrawal2019headtrack,
@@ -34,12 +35,14 @@
   abstract    = {Estimating and tracking a user’s head orientation is critical for many mobile computing applications. Existing solutions typically rely on infrastructure-based setups, such as cameras or lasers, combined with expensive inertial measurement units (IMUs). These approaches constrain the user to a fixed area and limit both portability and mobility. This work introduces HeadTrack, a necklace-style wearable consisting of a headset and a chest-piece, which estimates head orientation using wireless radio frequency (RF) signals. The core challenge addressed is to accurately measure multiple distances between the chest-mounted unit and the headset using ultra-wideband (UWB) radios. By decoupling head motion from body motion, this design enables both mobility and portability. Although UWB radios offer 1 GHz bandwidth and high-speed clocks, they typically achieve only ~10 cm ranging accuracy. HeadTrack improves this to ~5 mm by introducing a wired reference path. The transmitted signal is split and sent over both wired and wireless paths, allowing more precise distance estimation. For evaluation, we use ViCon to collect ground truth data. HeadTrack leverages an onboard IMU to resolve phase ambiguity and achieves head orientation tracking with a mean error of 6.5°. The system offers a wearable, occlusion-free, cost-effective solution for head orientation tracking with bounded and non-diverging error.},
   school      = {University of Illinois at Urbana-Champaign},
   year        = {2019},
-  url         = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FNpPnd0AAAAJ&citation_for_view=FNpPnd0AAAAJ:IjCSPb-OGe4C}
+  url         = {http://hdl.handle.net/2142/105242},
+  doi         = {http://hdl.handle.net/2142/105242}
+
 }
 
 @inproceedings{agrawal2025aoa,
   bibtex_show = {true}, 
-  abbr      = {EnvSys @ MobiSys'25},
+  abbr      = {ACM EnvSys (MobiSys'25)},
   author    = {Amod K. Agrawal},
   title     = {Localization using Angle-of-Arrival Triangulation},
   abstract  = {Indoor localization is a long-standing challenge in mobile computing, with significant implications for enabling location-aware and intelligent applications within smart environments such as homes, offices, and retail spaces. As AI assistants such as Amazon Alexa and Google Nest become increasingly pervasive, microphone-equipped devices are emerging as key components of everyday life and home automation. This paper introduces a passive, infrastructure-light system for localizing human speakers using speech signals captured by two or more spatially distributed smart devices. The proposed approach, GCC+, extends the Generalized Cross-Correlation with Phase Transform (GCC-PHAT) method to estimate the Angle-of-Arrival (AoA) of audio signals at each device and applies robust triangulation techniques to infer the speaker’s two-dimensional position. To further improve temporal resolution and localization accuracy, feature-space expansion and subsample interpolation techniques are employed for precise Time Difference of Arrival (TDoA) estimation. The system operates without requiring hardware modifications, prior calibration, explicit user cooperation, or knowledge of the speaker’s signal content, thereby offering a highly practical solution for real-world deployment. Experimental evaluation in a real-world home environment yields a median AoA estimation error of 2.2 degree and a median localization error of 1.25m, demonstrating the feasibility and effectiveness of audio-based localization for enabling context-aware, privacy-preserving ambient intelligence.},
@@ -51,7 +54,7 @@
   address   = {New York, NY, USA},
   doi       = {10.1145/3742460.3742984},
   isbn      = {979-8-4007-1986-8},
-  url       = {https://doi.org/10.1145/3742460.3742984}
+  slides    = {https://docs.google.com/presentation/d/1ew4ug19isuq1aQHTSVBqYDbdJ2eqj9cN/edit?usp=sharing&ouid=117522527622684919145&rtpof=true&sd=true}
 }
 
 @@patent{agrawal2024devicegrouping,
@@ -97,12 +100,27 @@
 
 @misc{iotworldtoday2025uwb,
   bibtex_show = {true},
-  abbr        = {Media Article},
+  abbr        = {Industry Article},
   abstract    = {Ultra-Wideband (UWB) technology is rapidly emerging as a key enabler of high-precision location-based services across industries. This article explores how UWB's fine-grained spatial accuracy, low latency, and robustness to interference make it ideal for applications such as indoor navigation, asset tracking, and secure device-to-device communication. Unlike traditional wireless technologies like Wi-Fi or Bluetooth, UWB offers centimeter-level accuracy, which opens new possibilities in smart homes, logistics, automotive, and augmented reality. The piece also highlights recent adoption trends, standardization efforts, and future directions for UWB in the broader context of IoT connectivity and context-aware experiences.},
   author       = {{IoT World Today}},
   title        = {Ultra‑Wideband: The Next Innovation in Location‑Based Services},
   howpublished = {\url{https://www.iotworldtoday.com/connectivity/ultra-wideband-the-next-innovation-in-location-based-services}},
   month        = June,
   year         = {2025},
-  note         = {Published June 17, 2025; Guest Expert Commentary}
+  url          = {https://www.iotworldtoday.com/connectivity/ultra-wideband-the-next-innovation-in-location-based-services},
+  note         = {Published June 17, 2025; Contributing Author}
+}
+
+@article{agrawal2025bluetooth,
+  bibtex_show = {true},
+  abbr        = {Industry Article},
+  author       = {Amod K. Agrawal},
+  title        = {Bluetooth Channel Sounding: A Quiet Revolution in Indoor Sensing},
+  abstract    = {As AI, smart environments, and ambient computing continue to evolve, Bluetooth Channel Sounding offers a simple but powerful promise: spatial intelligence without the hardware deployment complexity that has traditionally slowed widespread adoption.},
+  journal      = {IoT For All},
+  year         = {2025},
+  month        = July,
+  howpublished = {\url{https://www.iotforall.com/bluetooth-channel-sounding-indoor-sensing}},
+  url          = {https://www.iotforall.com/bluetooth-channel-sounding-indoor-sensing},
+  note         = {Published July 2, 2025; Contributing Author}
 }
