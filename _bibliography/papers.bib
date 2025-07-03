@@ -29,7 +29,7 @@
 
 @MastersThesis{agrawal2019headtrack,
   bibtex_show = {true},
-  abbr        = {M.S. CS Thesis},
+  abbr        = {M.S. Computer Science Thesis},
   title       = {HeadTrack: Tracking Head Orientation Using Wireless Signals},
   author      = {Amod K. Agrawal and Romit Roy Choudhury},
   abstract    = {Estimating and tracking a user’s head orientation is critical for many mobile computing applications. Existing solutions typically rely on infrastructure-based setups, such as cameras or lasers, combined with expensive inertial measurement units (IMUs). These approaches constrain the user to a fixed area and limit both portability and mobility. This work introduces HeadTrack, a necklace-style wearable consisting of a headset and a chest-piece, which estimates head orientation using wireless radio frequency (RF) signals. The core challenge addressed is to accurately measure multiple distances between the chest-mounted unit and the headset using ultra-wideband (UWB) radios. By decoupling head motion from body motion, this design enables both mobility and portability. Although UWB radios offer 1 GHz bandwidth and high-speed clocks, they typically achieve only ~10 cm ranging accuracy. HeadTrack improves this to ~5 mm by introducing a wired reference path. The transmitted signal is split and sent over both wired and wireless paths, allowing more precise distance estimation. For evaluation, we use ViCon to collect ground truth data. HeadTrack leverages an onboard IMU to resolve phase ambiguity and achieves head orientation tracking with a mean error of 6.5°. The system offers a wearable, occlusion-free, cost-effective solution for head orientation tracking with bounded and non-diverging error.},
@@ -57,15 +57,15 @@
   slides    = {https://docs.google.com/presentation/d/1ew4ug19isuq1aQHTSVBqYDbdJ2eqj9cN/edit?usp=sharing&ouid=117522527622684919145&rtpof=true&sd=true}
 }
 
-@@patent{agrawal2024devicegrouping,
+@patent{agrawal2024devicegrouping,
   bibtex_show = {true},
   abbr        = {U.S. Patent},
   author      = {Amod Agrawal and Maurizio Bocca and Md Fazlay Rabbi Masum Billah and Sean McClain and VenkatRaghavan VijayaRaghavan},
   title       = {Methods for automatic device grouping from wireless signals},
   abstract    = {This patent application introduces techniques for automatically grouping devices based on observed wireless signals. The method enables context-aware behaviors, co-location detection, and spatial organization without requiring explicit configuration. The system leverages Bluetooth and Wi-Fi signal characteristics, signal strength, and transmission patterns to cluster devices and infer shared physical environments.},
   year        = {2024},
+  school     = {Patent Application},
   location    = {United States Patent and Trademark Office},
-  type        = {Patent Application},
   note        = {US Patent App. 18/900,343, Pending},  
   address     = {United States}
 }
@@ -77,9 +77,9 @@
   title       = {Methods and apparatus to localize devices in the home},
   abstract    = {This work describes methods and apparatus to determine the position of devices within a home environment using wireless technologies. By leveraging RF signals and signal processing techniques, the system enables accurate in-home localization for smart devices, enhancing contextual automation, device grouping, and user interaction.},
   year        = {2023},
+  school     =  {Patent Application},
   location    = {United States Patent and Trademark Office},
   number      = {18/542,222},
-  type        = {Patent Application},
   note        = {US Patent App. 18/542,222, Pending},
   address     = {United States}
 }
@@ -93,18 +93,19 @@
   year        = {2023},
   location    = {United States Patent and Trademark Office},
   number      = {18/542,222},
-  type        = {Patent Application},
+  school     =  {Patent Application},
   note        = {US Patent App. 18/542,222, Pending},
   address     = {United States}
 }
 
-@misc{iotworldtoday2025uwb,
+@article{iotworldtoday2025uwb,
   bibtex_show = {true},
   abbr        = {Industry Article},
+  author       = {Amod K. Agrawal},
   abstract    = {Ultra-Wideband (UWB) technology is rapidly emerging as a key enabler of high-precision location-based services across industries. This article explores how UWB's fine-grained spatial accuracy, low latency, and robustness to interference make it ideal for applications such as indoor navigation, asset tracking, and secure device-to-device communication. Unlike traditional wireless technologies like Wi-Fi or Bluetooth, UWB offers centimeter-level accuracy, which opens new possibilities in smart homes, logistics, automotive, and augmented reality. The piece also highlights recent adoption trends, standardization efforts, and future directions for UWB in the broader context of IoT connectivity and context-aware experiences.},
-  author       = {{IoT World Today}},
   title        = {Ultra‑Wideband: The Next Innovation in Location‑Based Services},
   howpublished = {\url{https://www.iotworldtoday.com/connectivity/ultra-wideband-the-next-innovation-in-location-based-services}},
+  journal      = {IoT World Today},
   month        = June,
   year         = {2025},
   url          = {https://www.iotworldtoday.com/connectivity/ultra-wideband-the-next-innovation-in-location-based-services},
