@@ -27,7 +27,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-<p>I am an Applied Scientist at Amazon Lab126, focusing on mobile computing, wireless sensing, edge intelligence, and their integration with Alexa’s generative AI models.<br>I specialize in sensing technologies and have developed innovative solutions for IoT devices, with applications in smart home automation, proximity-based interactions, and real-time indoor localization.</p>
+<p>I am an Applied Scientist at Amazon Lab126, focusing on mobile computing, wireless sensing, edge intelligence, and their integration with Alexa’s generative AI models. I specialize in sensing technologies and have developed innovative solutions for IoT devices, with applications in smart home automation, proximity-based interactions, and real-time indoor localization.</p>
 
 As a founding member of the team developing Alexa’s spatial awareness capabilities,<br>I advance IoT experiences by integrating wireless sensing with real-world applications. My work enables AI systems to interpret physical presence and spatial context, supporting seamless and context-aware interactions.
 
