@@ -7,7 +7,6 @@ nav: true
 nav_order: 2
 ---
 
-
 <h3> Area Chair</h3>
 <ul>
     <li><strong>AMLC 2025 (Amazon Machine Learning Conference)</strong> – Physical Sciences & Hardware track</li>
@@ -33,7 +32,7 @@ nav_order: 2
   <li><strong>IEEE ICETCE 2025</strong> – International Conference on Emerging Technologies in Computer Engineering</li>
   <li><strong>IEEE DCOSS-IoT 2025</strong> – International Conference on Distributed Computing in Smart Systems and the Internet of Things
     <ul>
-      <li><strong>IEEE LS-NoT</strong> – International Workshop on Long and Short Range Wireless Technologies Applied to IoT for Networks of Tomorrow</li>
+      <li><strong>IEEE LS-NoT</strong> – International Workshop on L & S Range Wireless Tech. Applied to IoT for Networks of Tomorrow</li>
       <li><strong>IEEE DISCOLI</strong> – International Workshop on Distributed Collective Intelligence</li>
       <li><strong>IEEE IoT-Green</strong> – International Workshop on IoT-Driven Urban Sustainability and Green Technology</li>
       <li><strong>IEEE IoTI5</strong> – International Workshop on IoT Applications and Industry 5.0</li>
