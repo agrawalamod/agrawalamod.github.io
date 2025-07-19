@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-select-projects",
+          title: "select projects",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -402,34 +409,34 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-collective-aspects-of-privacy-sensing-and-localization-in-online-networks",
+          title: 'Collective Aspects of Privacy — Sensing and Localization in Online Networks',
+          description: "We study how user attributes such as location can be inferred in online networks through social sensing—not from individuals themselves, but from their connections. Using only information shared by contacts who joined the platform earlier, we evaluate how well a user&#39;s location can be predicted before or without their direct participation. Our findings reveal that individuals can be localized with surprising accuracy based on the disclosures of others, especially when many contacts have shared mobile or profile data. This shows that privacy in online ecosystems is collectively determined, not individually controlled. Our work highlights a new form of indirect localization, where network structure and peer behavior act as latent sensors for user attributes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-headtrack-tracking-head-orientation-using-wireless-signals",
+          title: 'HeadTrack: Tracking head orientation using wireless signals',
+          description: "University of Illinois, Urbana-ChampaignHead orientation tracking is critical for a range of mobile computing applications, including AR/VR, assistive technologies, and spatial interaction. Traditional solutions rely on infrastructure-based systems involving cameras, lasers, or high-end inertial sensors—limiting user mobility and constraining deployment to fixed environments.HeadTrack presents a wearable, infrastructure-free system that estimates a user’s head orientation using wireless signals. The system consists of a necklace-like wearable with a headset and chest-piece, each embedded with ultra-wideband (UWB) radios. By precisely estimating multiple distances between the headset and torso, HeadTrack infers the 3D orientation of the head relative to the body.To overcome the typical ~10 cm ranging limitation of UWB, the system introduces a reference-assisted design by splitting the transmitted signal across both wireless and wired paths. This approach reduces the ranging error to approximately 5 mm. Additionally, an onboard IMU is used to resolve phase ambiguities and ensure consistent tracking over time.Evaluated using ViCon ground truth data, HeadTrack achieves a head orientation tracking accuracy of 6.5°, offering a portable, occlusion-free, and cost-effective alternative to conventional motion capture systems. The system demonstrates how body-worn UWB sensing can enable fine-grained, infrastructure-free motion tracking in real-world settings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-harnessing-automobiles-for-safety-hams",
+          title: 'Harnessing AutoMobiles for Safety (HAMS)',
+          description: "The HAMS project explores the use of low-cost sensing solutions to enhance road safety and driving efficiency. By retrofitting off-the-shelf smartphones onto vehicle windshields, HAMS constructs a “virtual harness” that simultaneously monitors driver behavior, vehicle dynamics, and road context. The front camera observes the driver, the rear camera captures the road ahead, and onboard sensors such as GPS and accelerometers provide motion data. This multimodal sensing approach enables the system to detect complex events. For example, correlating hard braking with vehicle proximity and driver distraction—to provide actionable feedback for safer driving.The project addresses several real-world challenges, including variation in vehicle configurations, inconsistent road infrastructure (e.g., unmarked or variable-width lanes), and the need for efficient operation on resource-constrained mobile devices. HAMS employs a hybrid approach that combines lightweight computer vision techniques with deep learning models to ensure accuracy and scalability under these constraints.In addition to safety monitoring, my work extended to fuel efficiency analysis by integrating data from On-Board Diagnostics (OBD) interfaces. The system detects clutching, gear transitions, and aggressive driving behaviors, then quantifies their impact on fuel consumption. In urban traffic settings, the system revealed that up to 35% of fuel can be wasted during idle periods. Machine learning techniques, including regression models and unsupervised clustering, were used to model fuel usage patterns and identify geographic zones of inefficiency.HAMS has been piloted in driver training programs in collaboration with the Institute of Driving and Traffic Research (IDTR) and demonstrated potential use cases in fleet management and intelligent mapping services. The system offers a scalable framework for smart automotive diagnostics, context-aware fuel analytics, and automated driver coaching, with practical deployment potential in both developed and emerging markets.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-localization-using-speech-angle-of-arrival",
+          title: 'Localization using Speech Angle of Arrival',
+          description: "We explore a passive and infrastructure-light approach to indoor localization using arbitrary human speech captured by spatially distributed smart devices. As voice assistants become increasingly embedded in modern environments, the ability to localize speakers using only existing audio hardware presents a scalable and privacy-conscious alternative to vision or wearable-based tracking.The system leverages time-of-arrival differences in speech signals recorded across multiple microphone-equipped devices, such as smart speakers, TVs, or home robots and estimate the Angle of Arrival (AoA) at each device. It builds upon the classical Generalized Cross-Correlation with Phase Transform (GCC-PHAT) method, introducing enhancements (GCC+) such as feature-space expansion and subsample interpolation for improved time-delay estimation and angular precision.By combining AoA estimates through geometric triangulation, the system infers the speaker’s two-dimensional position in real time. Notably, this approach requires no prior calibration, no knowledge of the spoken content, and no active participation from the user, making it well-suited for ambient and context-aware applications in smart homes, offices, and assistive settings.Evaluated in a real-world residential environment, the system achieves a median AoA estimation error of 2.2 degrees and a median localization error of 1.25 meters. This work demonstrates the feasibility of using passive audio signals to enable spatially aware interactions, while proposing extensions to coplanar arrays, fusion with RF-based localization, and speaker profiling to support multiple human speakers in the space.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-indoor-localization-enabling-spatial-context-for-alexa-ai",
+          title: 'Indoor Localization—enabling spatial context for Alexa AI',
+          description: "While GPS performs poorly in indoor environments, spatial context remains critical for enabling intelligent and context-aware interactions with voice assistants and other connected devices. My work at Amazon Lab126 offers a foundational software framework for real-time spatial awareness in indoor environments, leveraging existing wireless infrastructure and devices&#39; sensing capabilities. By utilizing commodity radios such as Bluetooth Low Energy (BLE), Wi-Fi, Zigbee, and Ultra-Wideband (UWB), as well as other modalities including ultrasound and inertial tracking, the system performs distance estimation and positioning. It abstracts complex RF-based algorithms into a unified interface, supporting spatial use cases including proximity detection, device-to-device ranging, spatial presence, and user tracking. The framework has been developed through extensive real-world experimentation, systematically evaluating the performance, reliability, and limitations of each wireless modality under dynamic environmental conditions. To ensure scalability and robustness, the system integrates techniques from signal processing, embedded systems, and machine learning. It further supports multimodal sensor fusion to accommodate increasing heterogeneity in device form factors and sensing capabilities.While not directly exposed to end users, this platform acts as a core enabler for higher-layer applications that require spatial context, including room-aware assistance, presence sensing, and personalized user experiences. It also integrates with large language model (LLM)-based systems, providing them with location context to facilitate more intelligent and adaptive behaviors. This work contributes towards the broader goal of advancing ambient intelligence through adaptive and context-rich smart environments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-hey-disney-alexa-collaboration-enabling-wireless-sensing-use-cases-for-disney-resorts-and-parks",
+          title: 'Hey Disney! — Alexa collaboration — Enabling wireless sensing use-cases for Disney resorts...',
+          description: "As part of a collaboration between Amazon and Disney, this project enabled proximity-based guest experiences at scale by integrating the MagicBand+ wearable with Alexa-enabled devices. Deployed in over 28,000 rooms at Walt Disney World Resort, the system allows guests to seamlessly interact with in-room voice assistants by simply bringing their MagicBand+ near the device. These location-aware features, though subtle, enhance the overall guest experience by adding responsive, immersive touches that align with Disney’s emphasis on storytelling and magic. The underlying capabilities demonstrate how real-time localization and device awareness can be integrated into hospitality environments to create intuitive, personalized interactions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-project-7",
