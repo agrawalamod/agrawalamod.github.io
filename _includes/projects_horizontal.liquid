@@ -37,6 +37,20 @@
                 style="width: 100%; height: auto; object-fit: contain;"
               >
             {% endif %}
+            {% if project.video %}
+              <div class="embed-responsive embed-responsive-16by9 mb-2" style="width: 100%;">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/{{ project.video }}"
+                  allowfullscreen
+                  style="border: 0; width: 100%; height: 100%;"
+                >
+                </iframe>
+              </div>
+            {% endif %}
+            {% if project.github %}
+              <a href="{{ project.github }}" class="btn btn-primary mt-2" target="_blank">View on GitHub</a>
+            {% endif %}
           </div>
         {% endif %}
 
