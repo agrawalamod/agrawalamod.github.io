@@ -1,8 +1,8 @@
 ---
 layout: page
-title: select projects
+title: projects
 permalink: /projects/
-description:
+description: Select projects across Industry and Academia (2016—2025)
 nav: true
 nav_order: 4
 display_categories: [Industry, Academia]

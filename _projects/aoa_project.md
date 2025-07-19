@@ -6,7 +6,7 @@ img: assets/img/projects/aoa_1.png
 img2: assets/img/projects/aoa_2.png
 img3: assets/img/projects/aoa_3.png
 importance: 3
-organization: University of Illinois Urbana-Champaign, Amazon Lab126
+organization: University of Illinois at Urbana-Champaign, Amazon Lab126
 category: Academia
 redirect: https://envsensys.github.io/2025/
 ---
