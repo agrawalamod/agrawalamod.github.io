@@ -1,80 +1,12 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Indoor Localization—enabling spatial context for Alexa AI
+description: "While GPS performs poorly in indoor environments, spatial context remains critical for enabling intelligent and context-aware interactions with voice assistants and other connected devices.<br> My work at Amazon Lab126 offers a foundational software framework for real-time spatial awareness in indoor environments, leveraging existing wireless infrastructure and devices' sensing capabilities. By utilizing commodity radios such as Bluetooth Low Energy (BLE), Wi-Fi, Zigbee, and Ultra-Wideband (UWB), as well as other modalities including ultrasound and inertial tracking, the system performs distance estimation and positioning. It abstracts complex RF-based algorithms into a unified interface, supporting spatial use cases including proximity detection, device-to-device ranging, spatial presence, and user tracking. The framework has been developed through extensive real-world experimentation, systematically evaluating the performance, reliability, and limitations of each wireless modality under dynamic environmental conditions. To ensure scalability and robustness, the system integrates techniques from signal processing, embedded systems, and machine learning. It further supports multimodal sensor fusion to accommodate increasing heterogeneity in device form factors and sensing capabilities.<br>While not directly exposed to end users, this platform acts as a core enabler for higher-layer applications that require spatial context, including room-aware assistance, presence sensing, and personalized user experiences. It also integrates with large language model (LLM)-based systems, providing them with location context to facilitate more intelligent and adaptive behaviors. This work contributes towards the broader goal of advancing ambient intelligence through adaptive and context-rich smart environments."
+img: assets/img/projects/alexa.png
+img2: assets/img/projects/ils_2.jpg
+img3: assets/img/projects/ils_3.jpg
+organization: Amazon Lab126
+importance: 1
+category: Industry
+redirect: https://www.amazon.jobs/content/en/teams/devices-and-services/lab126
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
