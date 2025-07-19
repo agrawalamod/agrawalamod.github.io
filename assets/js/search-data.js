@@ -409,17 +409,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
+          section: "News",},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
@@ -439,6 +429,11 @@ ninja.data = [{
           description: "We study how user attributes such as location and biography can be inferred in online networks through proxy social sensing—not from individuals themselves, but from their connections. Using only the information shared by contacts who joined the network earlier, we evaluate how accurately a user&#39;s location can be predicted without their direct participation. Our findings reveal that individuals can be localized with surprising precision (median error of ~68 km on the global map, versus ~6300 km in the null model), especially when many of their contacts have shared mobile data. This demonstrates that privacy in online networks is collectively determined, not individually controlled.We apply unsupervised techniques, including modal city prediction for location and vector similarity for biographical attributes, and benchmark against randomized baselines (null model). While biographical features are harder to infer, their predictability increases meaningfully as the number of disclosing connections grows. Our analysis also shows that broader disclosure behavior across the network systematically improves inference accuracy, highlighting how individual privacy is shaped by the behavior of others. This work introduces a new form of indirect localization, where network structure and peer behavior function as latent sensors for user attributes.This study provides the first empirical support for the shadow profile hypothesis, demonstrating that online networks can infer personal information about non-users or passive participants through the disclosures of others. It raises important questions about the nature of privacy in digital ecosystems, where user-level consent is insufficient to safeguard personal information in a socially connected world.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/collective_aspects_project/";
+            },},{id: "projects-change-point-detection-using-edit-distance",
+          title: 'Change Point Detection Using Edit Distance',
+          description: "This project explores a novel method for detecting change points in time-series data using Edit Distance, enabling detection in both numerical and textual domains. Traditional change point detection techniques are limited to numerical inputs, but by quantizing data and representing it as symbolic sequences, this approach applies Levenshtein distance to identify structural deviations in system behavior. The algorithm scans for shifts in data patterns using a sliding buffer technique and flags points of semantic change—regardless of magnitude. Validated on diverse datasets such as weather records, eye movement, and stock prices, the method can support real-time monitoring of software systems, data centers, and network traffic to detect faults and anomalies early. This work opens pathways for more adaptive, domain-agnostic fault detection mechanisms in large-scale systems in real-time.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cpd_project/";
             },},{id: "projects-hey-disney-alexa-collaboration-enabling-wireless-sensing-use-cases-for-disney-resorts-and-parks",
           title: 'Hey Disney! — Alexa collaboration — Enabling wireless sensing use-cases for Disney resorts...',
           description: "As part of a collaboration between Amazon and Disney, this project enabled proximity-based guest experiences at scale by integrating the MagicBand+ wearable with Alexa-enabled devices. Deployed in over 28,000 rooms at Walt Disney World Resort, the system allows guests to seamlessly interact with in-room voice assistants by simply bringing their MagicBand+ near the device. These location-aware features, though subtle, enhance the overall guest experience by adding responsive, immersive touches that align with Disney’s emphasis on storytelling and magic. The underlying capabilities demonstrate how real-time localization and device awareness can be integrated into hospitality environments to create intuitive, personalized interactions.",
@@ -454,6 +449,11 @@ ninja.data = [{
           description: "Head orientation tracking is critical for a range of mobile computing applications, including AR/VR, assistive technologies, and spatial interaction. Traditional solutions rely on infrastructure-based systems involving cameras, lasers, or high-end inertial sensors—limiting user mobility and constraining deployment to fixed environments.HeadTrack presents a wearable, infrastructure-free system that estimates a user’s head orientation using wireless signals. The system consists of a necklace-like wearable with a headset and chest-piece, each embedded with ultra-wideband (UWB) radios. By precisely estimating multiple distances between the headset and torso, HeadTrack infers the 3D orientation of the head relative to the body.To overcome the typical ~10 cm ranging limitation of UWB, the system introduces a reference-assisted design by splitting the transmitted signal across both wireless and wired paths. This approach reduces the ranging error to approximately 5 mm. Additionally, an onboard IMU is used to resolve phase ambiguities and ensure consistent tracking over time.Evaluated using ViCon ground truth data, HeadTrack achieves a head orientation tracking accuracy of 6.5°, offering a portable, occlusion-free, and cost-effective alternative to conventional motion capture systems. The system demonstrates how body-worn UWB sensing can enable fine-grained, infrastructure-free motion tracking in real-world settings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/headtrack_project/";
+            },},{id: "projects-translator-an-intelligent-gesture-based-iot-communication-engine-for-the-deaf-and-mute",
+          title: 'trAnSLator: An Intelligent Gesture-Based IoT Communication Engine for the Deaf and Mute',
+          description: "trAnSLator is an intelligent communication system designed to facilitate natural interaction for individuals who are deaf or mute. It interprets sign language gestures into real-time, coherent spoken sentences, enabling users to engage in everyday conversations and even conduct phone calls using sign language. The system processes time-series gesture data through feature extraction and dynamic time warping algorithms, and assembles recognized gestures into meaningful sentences using a conversational bot framework. Built using a MYO armband, which captures electromyographic and inertial signals and integrated with an Android application, trAnSLator supports personalized gesture learning and incorporates contextual awareness to improve communication accuracy and fluency.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/translator_project/";
             },},{
         id: 'social-email',
         title: 'email',
