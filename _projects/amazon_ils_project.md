@@ -5,6 +5,7 @@ description: "Indoor positioning using GPS is unreliable in enclosed environment
 img: assets/img/projects/alexa.png
 img2: assets/img/projects/ils_2.jpg
 img3: assets/img/projects/ils_3.jpg
+img4: assets/img/projects/ils_4.png
 organization: Amazon Lab126
 importance: 1
 category: Industry

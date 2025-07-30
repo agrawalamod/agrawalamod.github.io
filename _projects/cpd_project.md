@@ -7,4 +7,5 @@ img2: assets/img/projects/cpd_2.png
 importance: 4
 organization: IBM Research
 category: Industry
+redirect: https://research.ibm.com/
 ---
