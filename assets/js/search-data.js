@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-updates",
+          title: "updates",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/updates/";
+          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -398,18 +405,57 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-realtor-com-expert-commentary-on-smart-home-security",
+          title: 'Realtor.com – Expert Commentary on Smart Home Security',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_1/";
+            },},{id: "news-hackillinois-2025-judge",
+          title: 'HackIllinois 2025 – Judge',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
+            },},{id: "news-connectivity-standards-alliance-csa-matter-member-meeting",
+          title: 'Connectivity Standards Alliance (CSA) — Matter Member Meeting',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
+            },},{id: "news-ticker-news-expert-commentary-on-ai-advances-beyond-screens-with-ambient-sensing",
+          title: 'Ticker News – Expert Commentary on AI Advances Beyond Screens With Ambient Sensing...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_5/";
+            },},{id: "news-product-space-hackathon-2025-mentor",
+          title: 'Product Space Hackathon 2025 – Mentor',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_5/";
+            },},{id: "news-the-spruce-expert-commentary-on-smart-lighting-innovation-and-smart-home-adoption",
+          title: 'The Spruce – Expert Commentary on Smart Lighting Innovation and Smart Home Adoption...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_2/";
+            },},{id: "news-acm-mobisys-2025-conference-amp-workshop-presentation",
+          title: 'ACM MobiSys 2025 – Conference &amp;amp; Workshop Presentation',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-ieee-senior-member-recognized-for-technical-contributions-and-professional-excellence",
+          title: 'IEEE Senior Member – Recognized for technical contributions and professional excellence',
           description: "",
-          section: "News",},{id: "projects-project-9",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_1/";
+            },},{id: "news-forbes-expert-commentary-on-smart-hospitality-in-the-uae",
+          title: 'Forbes – Expert Commentary on Smart Hospitality in the UAE',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_3/";
+            },},{id: "news-homes-amp-gardens-expert-commentary-on-ai-powered-smart-home-adaptation",
+          title: 'Homes &amp;amp; Gardens – Expert Commentary on AI-Powered Smart Home Adaptation',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_4/";
+            },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
