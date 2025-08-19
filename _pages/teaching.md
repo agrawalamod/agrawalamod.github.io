@@ -20,6 +20,7 @@ nav_order: 2
 .teaching-table td {
   padding: 0.25rem 0.5rem;
   line-height: 1.2;
+  color: var(--global-text-color) !important;
 }
 </style>
 
