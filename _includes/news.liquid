@@ -1,34 +1,138 @@
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
+    {% assign news = site.news | reverse %}
+    {% assign commentary_news = news | where: 'category', 'commentary' %}
+    {% assign personal_news = news | where: 'category', 'personal' %}
+
+    <!-- Media Commentary Section -->
+    {% if commentary_news.size > 0 %}
+      <div class="news-section mb-4">
+        <h4 class="news-section-title">Media</h4>
+        <div class="news-container">
+          {% for item in commentary_news %}
+            <div class="news-item mb-2">
+              <div class="news-header d-flex justify-content-between align-items-center mb-1">
+                <span class="news-date text-muted">{{ item.date | date: '%b %d, %Y' }}</span>
+                {% if item.link %}
+                  <a href="{{ item.link }}" class="news-link" target="_blank">Read More</a>
+                {% endif %}
+              </div>
+
+              <div class="d-flex">
+                <div class="news-content flex-grow-1 me-3">
+                  {% if item.inline %}
+                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                  {% else %}
+                    {% if item.title %}
+                      <h5 class="news-title">{{ item.title }}</h5>
+                    {% endif %}
+                    {% if item.excerpt %}
+                      <p class="news-excerpt">{{ item.excerpt }}</p>
+                    {% endif %}
+                  {% endif %}
+                </div>
+
+                {% if item.images %}
+                  <div class="news-images-gallery" data-images="{{ item.images | jsonify | escape }}">
+                    {% assign image_count = item.images.size %}
+                    <div class="image-thumbnail" onclick="openImageModal(this)">
+                      <img src="{{ item.images[0] | relative_url }}" class="gallery-image" alt="News image">
+                      <div class="overlay">
+                        {% if image_count > 0 %}
+                          <span class="image-count">{{ image_count | minus: 0 }}</span>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- Personal News Section -->
+    {% if personal_news.size > 0 %}
+      <div class="news-section">
+        <h4 class="news-section-title">Personal News</h4>
+        <div class="news-container">
+          {% for item in personal_news %}
+            <div class="news-item mb-2">
+              <div class="news-header d-flex justify-content-between align-items-center mb-1">
+                <span class="news-date text-muted">{{ item.date | date: '%b %d, %Y' }}</span>
+                {% if item.link %}
+                  <a href="{{ item.link }}" class="news-link" target="_blank">Read More</a>
+                {% endif %}
+              </div>
+
+              <div class="d-flex">
+                <div class="news-content flex-grow-1 me-3">
+                  {% if item.inline %}
+                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                  {% else %}
+                    {% if item.title %}
+                      <h5 class="news-title">{{ item.title }}</h5>
+                    {% endif %}
+                    {% if item.excerpt %}
+                      <p class="news-excerpt">{{ item.excerpt }}</p>
+                    {% endif %}
+                  {% endif %}
+                </div>
+
+                {% if item.images %}
+                  <div class="news-images-gallery" data-images="{{ item.images | jsonify | escape }}">
+                    {% assign image_count = item.images.size %}
+                    <div class="image-thumbnail" onclick="openImageModal(this)">
+                      <img src="{{ item.images[0] | relative_url }}" class="gallery-image" alt="News image">
+                      <div class="overlay">
+                        {% if image_count > 0 %}
+                          <span class="image-count">{{ image_count | minus: 0 }}</span>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}
+</div>
+
+<!-- Image Modal -->
+<div
+  id="imageModal"
+  class="image-modal"
+  style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999;"
+>
+  <span
+    class="close"
+    onclick="closeImageModal()"
+    style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000;"
+    >&times;</span
+  >
+
+  <div class="modal-images" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+    <img id="modalImage" src="" alt="Modal image" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+  </div>
+
+  <button
+    class="nav-btn prev"
+    onclick="prevImage()"
+    style="position: absolute; left: 30px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.3); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 50%; font-size: 20px; font-weight: bold;"
+  >
+    ‹
+  </button>
+  <button
+    class="nav-btn next"
+    onclick="nextImage()"
+    style="position: absolute; right: 30px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.3); color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 50%; font-size: 20px; font-weight: bold;"
+  >
+    ›
+  </button>
 </div>

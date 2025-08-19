@@ -7,12 +7,28 @@ nav: true
 nav_order: 2
 ---
 
-<h3> Area Chair</h3>
+<style>
+.teaching-table {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.teaching-table td:nth-child(1) { width: 15%; }
+.teaching-table td:nth-child(2) { width: 35%; }
+.teaching-table td:nth-child(3) { width: 35%; }
+.teaching-table td:nth-child(4) { width: 15%; }
+.teaching-table td {
+  padding: 0.25rem 0.5rem;
+  line-height: 1.2;
+}
+</style>
+
+<h4 class="news-section-title">Area Chair</h4>
 <ul>
     <li><strong>AMLC 2025 (Amazon Machine Learning Conference)</strong> – Physical Sciences & Hardware track</li>
 </ul>
 
-<h3>PC Member / Reviewer</h3>
+<h4 class="news-section-title">PC Member / Reviewer</h4>
 <ul>
   <li><strong>ACM IMWUT (UbiComp 2025)</strong> – Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies</li>
   <li><strong>ACM SenSys 2025</strong> – 23rd International Conference on Embedded Networked Sensor Systems
@@ -42,23 +58,62 @@ nav_order: 2
   </li>
 </ul>
 
-<h3>Teaching</h3>
+<h4 class="news-section-title">Teaching</h4>
 <ul>
-  <li><b>University of Illinois, Urbana-Champaign</b><br>
-    Graduate Teaching Assistant
-    <ul>
-      <li>Spring 2019: CS 498IT – Internet of Things – Prof. Matthew Caesar</li>
-      <li>Fall 2018: CS 410 – Text Information Systems – Prof. ChengXiang Zhai</li>
-      <li>Spring 2018: CS 438 – Communication Networks – Prof. Robin Kravets</li>
-      <li>Fall 2017: CS 125 – Introduction to Computer Science – Prof. William Chapman, Prof. Geoffery Challen, Prof. Lawrence Angrave</li>
-    </ul>
+  <li>Graduate Teaching Assistant, <b>University of Illinois, Urbana-Champaign</b><br>
+  <br>
+    <table class="table table-sm teaching-table">
+      <tbody>
+        <tr>
+          <td>CS 498IT</td>
+          <td>Internet of Things</td>
+          <td>Prof. Matthew Caesar</td>
+          <td>Spring 2019</td>
+        </tr>
+        <tr>
+          <td>CS 410</td>
+          <td>Text Information Systems</td>
+          <td>Prof. ChengXiang Zhai</td>
+          <td>Fall 2018</td>
+        </tr>
+        <tr>
+          <td>CS 438</td>
+          <td>Communication Networks</td>
+          <td>Prof. Robin Kravets</td>
+          <td>Spring 2018</td>
+        </tr>
+        <tr>
+          <td>CS 125</td>
+          <td>Introduction to Computer Science</td>
+          <td>Prof. William Chapman, Prof. Geoffery Challen, Prof. Lawrence Angrave</td>
+          <td>Fall 2017</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
-  <li><b>IIIT-Delhi, India</b><br>
-    Teaching Assistant
-    <ul>
-      <li>Spring 2017: CSE 565 – Software Defined Networking – Prof. Vinayak Naik</li>
-      <li>Spring 2016: CSE 233 – Network Administration – Prof. Vinayak Naik</li>
-      <li>Fall 2015: CSE 230 – Systems Administration – Prof. Vinayak Naik</li>
-    </ul>
+  <li> Teaching Assistant, <b>IIIT-Delhi, India</b><br>
+  <br>
+    <table class="table table-sm teaching-table">
+      <tbody>
+        <tr>
+          <td>CSE 565</td>
+          <td>Software Defined Networking</td>
+          <td>Prof. Vinayak Naik</td>
+          <td>Spring 2017</td>
+        </tr>
+        <tr>
+          <td>CSE 233</td>
+          <td>Network Administration</td>
+          <td>Prof. Vinayak Naik</td>
+          <td>Spring 2016</td>
+        </tr>
+        <tr>
+          <td>CSE 230</td>
+          <td>Systems Administration</td>
+          <td>Prof. Vinayak Naik</td>
+          <td>Fall 2015</td>
+        </tr>
+      </tbody>
+    </table>
   </li>
 </ul>

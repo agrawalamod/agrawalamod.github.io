@@ -1417,3 +1417,13 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+// Global section title styling
+.news-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--global-theme-color);
+  border-bottom: 2px solid var(--global-theme-color);
+  padding-bottom: 0.25rem;
+}
