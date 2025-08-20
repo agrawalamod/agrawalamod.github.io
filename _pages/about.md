@@ -32,9 +32,9 @@ latest_posts:
 
 As a founding member of the team developing Alexa’s spatial awareness capabilities,<br>I advance IoT experiences by integrating wireless sensing with real-world applications. My work enables AI systems to interpret physical presence and spatial context, supporting seamless and context-aware interactions.
 
-Prior to Amazon, I was a Graduate student at the University of Illinois at Urbana-Champaign (UIUC), advised by <a href='https://croy.web.engr.illinois.edu/'>Prof. Romit Roy Choudhury</a>. My Thesis focused on problems in mobile and wearable computing, wireless sensing, user tracking, and<br>indoor localization.
+Prior to Amazon, I was a graduate student at the University of Illinois at Urbana-Champaign (UIUC), advised by <a href='https://croy.web.engr.illinois.edu/'>Prof. Romit Roy Choudhury</a>. My Thesis (2019) focused on problems in mobile and wearable computing, wireless sensing, user tracking, and<br>indoor localization.
 
-Previously, I received my Bachelors (2017) in Computer Science and Engineering from IIIT-Delhi, where I worked on problems in mobile computing and collaborative sensing in online networks, advised by <a href='https://www.vinayaknaik.info/'> Prof. Vinayak Naik</a> and <a href='https://www.iiit.ac.in/faculty/ponnurangam-kumaraguru/'>Prof. Ponnurangam Kumaraguru (PK)</a>.
+Previously, I received my Bachelors (2017) in Computer Science and Engineering from <a href='https://www.iiitd.ac.in/'>IIIT-Delhi</a>, where I worked on problems in mobile computing and collaborative sensing in online networks, advised by <a href='https://www.vinayaknaik.info/'> Prof. Vinayak Naik</a> and <a href='https://www.iiit.ac.in/faculty/ponnurangam-kumaraguru/'>Prof. Ponnurangam Kumaraguru</a>.
 
 <p>Over the past decade, I have had the opportunity to have affiliations and collaborations with multiple research organizations – <br>
 <a href='https://www.microsoft.com/en-us/research/project/hams/'>Microsoft Research</a>, IBM Research, Xerox Research, ETH-Zurich, <a href='https://sinrg.csl.illinois.edu/'>Signals and Inference Research Group</a> (SiNRG @ UIUC), <a href='https://precog.iiit.ac.in/'>PreCog Research Group</a> (PreCog @ IIIT-Delhi), <a href='https://www.rsa.com/'> RSA Security</a>, and Mobile and Ubiquitous Computing Group (MUC @ IIIT-Delhi).</p>
