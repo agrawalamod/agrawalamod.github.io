@@ -405,6 +405,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "news-project-hams-nominated-for-prime-minister-39-s-award-2020-amp-featured-by-the-govt-of-india",
+          title: 'Project HAMS nominated for Prime Minister&amp;#39;s Award (2020) &amp;amp; featured by the Govt....',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_7/";
+            },},{id: "news-research-cited-by-organization-for-economic-co-operation-and-development-oecd",
+          title: 'Research cited by Organization for Economic Co-operation and Development (OECD)',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_6/";
             },},{id: "news-realtor-com-expert-commentary-on-smart-home-security",
           title: 'Realtor.com – Expert Commentary on Smart Home Security',
           description: "",
