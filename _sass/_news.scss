@@ -20,7 +20,7 @@
   .news-link {
     font-size: 0.8rem;
     text-decoration: none;
-    
+
     &:hover {
       text-decoration: underline;
     }
@@ -29,19 +29,20 @@
   .news-images-gallery {
     cursor: pointer;
     flex-shrink: 0;
-    
+    margin-left: 1rem;
+
     .image-thumbnail {
       position: relative;
-      width: 80px;
+      width: 90px;
       height: 80px;
-      
+
       .gallery-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 6px;
       }
-      
+
       .overlay {
         position: absolute;
         top: 0;
@@ -53,7 +54,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 6px;
-        
+
         .image-count {
           color: white;
           font-size: 0.9rem;
@@ -62,7 +63,7 @@
       }
     }
   }
-  
+
   .image-modal {
     display: none;
     position: fixed;
@@ -72,7 +73,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    
+
     .modal-content {
       position: absolute;
       top: 50%;
@@ -82,7 +83,7 @@
       height: 90vh;
       max-width: 1000px;
       max-height: 800px;
-      
+
       .close {
         position: absolute;
         top: -40px;
@@ -92,32 +93,32 @@
         font-weight: bold;
         cursor: pointer;
         z-index: 1001;
-        
+
         &:hover {
           opacity: 0.7;
         }
       }
-      
+
       .modal-images {
         width: 100%;
         height: calc(100% - 60px);
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         #modalImage {
           max-width: 100%;
           max-height: 100%;
           object-fit: contain;
         }
       }
-      
+
       .modal-nav {
         position: absolute;
         bottom: -50px;
         left: 50%;
         transform: translateX(-50%);
-        
+
         .nav-btn {
           background: rgba(255, 255, 255, 0.2);
           color: white;
@@ -127,7 +128,7 @@
           cursor: pointer;
           border-radius: 5px;
           font-size: 16px;
-          
+
           &:hover {
             background: rgba(255, 255, 255, 0.4);
           }
@@ -139,11 +140,11 @@
   .news-title {
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
-    
+
     a {
       color: var(--global-text-color);
       text-decoration: none;
-      
+
       &:hover {
         color: var(--global-theme-color);
         text-decoration: underline;
