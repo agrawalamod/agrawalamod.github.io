@@ -48,7 +48,7 @@ nav_order: 2
 <table class="table table-sm service-table">
   <tbody>
     <tr>
-      <td>AMLC</td>
+      <td><a href="https://www.amazon.science/latest-news/amazons-annual-machine-learning-conference-focuses-on-community-and-connections" target="_blank">AMLC</a></td>
       <td>Amazon Machine Learning Conference – Physical Sciences & Hardware track</td>
       <td>2025</td>
     </tr>
@@ -59,87 +59,87 @@ nav_order: 2
 <table class="table table-sm service-table">
   <tbody>
     <tr>
-      <td>ACM IMWUT / UbiComp</td>
+      <td><a href="https://dl.acm.org/journal/imwut" target="_blank">ACM IMWUT / UbiComp</a></td>
       <td>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>ACM SenSys</td>
+      <td><a href="https://sensys.acm.org/2025/" target="_blank">ACM SenSys</a></td>
       <td>International Conference on Embedded Networked Sensor Systems</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ HumanSys</td>
+      <td>↳ <a href="https://humansys-workshop.github.io/WS/2025/index.html" target="_blank">HumanSys</a></td>
       <td>International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>ACM MobiSys</td>
+      <td><a href="https://www.sigmobile.org/mobisys/2025/  " target="_blank">ACM MobiSys</a></td>
       <td>International Conference on Mobile Systems, Applications, and Services</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ EnvSys</td>
+      <td>↳ <a href="https://envsensys.github.io/2025/" target="_blank">EnvSys</a></td>
       <td>International Workshop on Environmental Sensing Systems for Smart Cities</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ Rising Stars</td>
+      <td>↳ <a href="https://www.sigmobile.org/mobisys/2025/rising_stars/" target="_blank">Rising Stars</a></td>
       <td>Rising Stars Forum</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>Amazon ARA</td>
+      <td><a href="https://www.amazon.science/research-awards/call-for-proposals" target="_blank">Amazon ARA</a></td>
       <td>Amazon Research Awards – Think Big, Agentic AI, and AWS AI Ads (Reviewer and Advisor)</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>IEEE IPIN</td>
+      <td><a href="https://ipin-conference.org/2025/index.html" target="_blank">IEEE IPIN</a></td>
       <td>International Conference on Indoor Positioning and Indoor Navigation</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>IEEE BalkanCom</td>
+      <td><a href="https://www.balkancom.info/2025/" target="_blank">IEEE BalkanCom</a></td>
       <td>International Balkan Conference on Communications and Networking</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>IEEE ICETCE</td>
+      <td><a href="https://icetce.skit.ac.in/index" target="_blank">IEEE ICETCE</a></td>
       <td>International Conference on Emerging Technologies in Computer Engineering</td>
       <td>2025</td>
     </tr>
     <tr>
-      <td>IEEE DCOSS-IoT</td>
+      <td><a href="https://dcoss.org/dcoss2025/" target="_blank">IEEE DCOSS-IoT</a></td>
       <td>International Conference on Distributed Computing in Smart Systems and the Internet of Things</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ LS-NoT</td>
+      <td>↳ <a href="https://ls-not-workshop.github.io/ls-not-2025/#home" target="_blank">LS-NoT</a></td>
       <td>International Workshop on Long & Short Range Wireless Technologies Applied to IoT for Networks of Tomorrow</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ DISCOLI</td>
+      <td>↳ <a href="https://discoli-workshop.github.io/2025/" target="_blank">DISCOLI</a></td>
       <td>International Workshop on Distributed Collective Intelligence</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ IoT-Green</td>
+      <td>↳ <a href="https://sites.google.com/view/smart-green-iot-2025/home" target="_blank">IoT-Green</a></td>
       <td>International Workshop on IoT-Driven Urban Sustainability and Green Technology</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ IoTI5</td>
+      <td>↳ <a href="http://ioti5-2025.cs.duth.gr/" target="_blank">IoTI5</a></td>
       <td>International Workshop on IoT Applications and Industry 5.0</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ ISIoT</td>
+      <td>↳ <a href="https://sites.google.com/view/isiot-2025/home?authuser=0" target="_blank">ISIoT</a></td>
       <td>International Workshop on Intelligent Systems for the Internet of Things</td>
       <td>2025</td>
     </tr>
     <tr class="sub-event">
-      <td>↳ HIEMI</td>
+      <td>↳ <a href="https://hiemi-workshop.github.io/2025/#organization" target="_blank">HIEMI</a></td>
       <td>International Workshop on Hybrid Intelligence for Internet of Everything Models and Implementations</td>
       <td>2025</td>
     </tr>
