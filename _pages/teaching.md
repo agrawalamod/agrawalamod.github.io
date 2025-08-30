@@ -11,7 +11,7 @@ nav_order: 2
 .teaching-table {
   table-layout: fixed;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .teaching-table td:nth-child(1) { width: 18%; }
 .teaching-table td:nth-child(2) { width: 32%; }
@@ -44,7 +44,7 @@ nav_order: 2
 }
 </style>
 
-<h4 class="news-section-title">Area Chair</h4>
+<h4 class="news-section-title" style="margin-bottom: 0.5rem;">Area Chair</h4>
 <table class="table table-sm service-table">
   <tbody>
     <tr>
@@ -55,7 +55,7 @@ nav_order: 2
   </tbody>
 </table>
 
-<h4 class="news-section-title">PC Member / Reviewer</h4>
+<h4 class="news-section-title" style="margin-bottom: 0.5rem; margin-top: 1rem;">PC Member / Reviewer</h4>
 <table class="table table-sm service-table">
   <tbody>
     <tr>
@@ -146,7 +146,7 @@ nav_order: 2
   </tbody>
 </table>
 
-<h4 class="news-section-title">Teaching</h4>
+<h4 class="news-section-title" style="margin-bottom: 0.5rem; margin-top: 1rem;">Teaching</h4>
 <div>
   <b>University of Illinois, Urbana-Champaign</b> – Graduate Teaching Assistant<br>
   <table class="table table-sm teaching-table">
