@@ -13,10 +13,10 @@ nav_order: 2
   width: 100%;
   margin-bottom: 0.2rem;
 }
-.teaching-table td:nth-child(1) { width: 18%; }
+.teaching-table td:nth-child(1) { width: 20%; }
 .teaching-table td:nth-child(2) { width: 32%; }
-.teaching-table td:nth-child(3) { width: 38%; }
-.teaching-table td:nth-child(4) { width: 12%; text-align: right; }
+.teaching-table td:nth-child(3) { width: 32%; }
+.teaching-table td:nth-child(4) { width: 16%; text-align: right; }
 .teaching-table td {
   padding: 0.1rem 0.5rem;
   line-height: 1.0;
@@ -28,8 +28,8 @@ nav_order: 2
   width: 100%;
   margin-bottom: 0.2rem;
 }
-.service-table td:nth-child(1) { width: 18%; }
-.service-table td:nth-child(2) { width: 75%; }
+.service-table td:nth-child(1) { width: 20%; }
+.service-table td:nth-child(2) { width: 73%; }
 .service-table td:nth-child(3) { width: 7%; text-align: right; }
 .service-table td {
   padding: 0.1rem 0.5rem;
@@ -39,9 +39,15 @@ nav_order: 2
 .service-table .sub-event td:first-child {
   padding-left: 1.5rem;
 }
+@media (max-width: 768px) {
+  .service-table .sub-event td:first-child {
+    padding-left: 0.5rem;
+  }
+}
 .service-table tr:first-child td {
   border-top: none;
 }
+
 </style>
 
 <h4 class="news-section-title" style="margin-bottom: 0.5rem;">Area Chair</h4>
