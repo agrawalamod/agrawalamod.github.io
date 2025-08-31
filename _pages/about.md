@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.amazon.jobs/content/en/teams/devices-and-services/lab126'>Amazon Lab126.</a> San Francisco Bay Area.
+subtitle: <a href='https://www.amazon.jobs/content/en/teams/devices-and-services/lab126' class='theme-link'><b>Amazon Lab126.</b></a> San Francisco Bay Area.
 
 profile:
   align: right
@@ -27,6 +27,16 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+<style>
+.theme-link {
+  color: var(--global-theme-color) !important;
+}
+.theme-link:hover {
+  color: var(--global-hover-color) !important;
+}
+
+</style>
 
 <p>I am an Applied Scientist at Amazon Lab126, focusing on mobile computing, wireless sensing, edge intelligence, and their integration with Alexa’s generative AI models. I specialize in sensing technologies and have developed innovative solutions for IoT devices, with applications in smart home automation, proximity-based interactions, and real-time indoor localization.</p>
 
