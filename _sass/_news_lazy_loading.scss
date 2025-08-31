@@ -1,0 +1,22 @@
+// Optimized lazy loading styles
+.gallery-image {
+  &[loading="lazy"] {
+    background: #f5f5f5;
+    min-height: 80px;
+  }
+}
+
+// Performance optimizations
+.news-content {
+  contain: layout;
+}
+
+.news-images-gallery {
+  flex-shrink: 0;
+  contain: layout;
+}
+
+.news-item {
+  contain: layout;
+  transform: translateZ(0);
+}
