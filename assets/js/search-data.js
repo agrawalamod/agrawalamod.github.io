@@ -465,6 +465,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/expert_commentary_4/";
+            },},{id: "news-business-com-expert-commentary-on-ble-beacons-for-location-aware-marketing-and-personalization",
+          title: 'Business.com – Expert Commentary on BLE Beacons for Location-Aware Marketing and Personalization',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_6/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
