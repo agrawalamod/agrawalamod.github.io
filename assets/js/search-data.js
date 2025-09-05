@@ -470,6 +470,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/expert_commentary_6/";
+            },},{id: "news-invited-to-speak-at-tekforce-connect-2025-leadership-spotlight-on-ai-s-impact",
+          title: 'Invited to speak at Tekforce Connect 2025 – Leadership Spotlight on AI’s Impact...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_8/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
