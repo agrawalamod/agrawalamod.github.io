@@ -95,6 +95,16 @@ nav_order: 2
       <td>2025</td>
     </tr>
     <tr>
+      <td><a href="https://percom.org/" target="_blank">IEEE PerCom</a></td>
+      <td>International Conference on Pervasive Computing and Communications</td>
+      <td>2026</td>
+    </tr>
+    <tr class="sub-event">
+      <td>↳ <a href="https://sites.google.com/view/edge-well-2026/" target="_blank">EDGE-Well</a></td>
+      <td>International Workshop on Emerging Intelligent Edge for Wellbeing</td>
+      <td>2026</td>
+    </tr>
+    <tr>
       <td><a href="https://www.amazon.science/research-awards/call-for-proposals" target="_blank">Amazon ARA</a></td>
       <td>Amazon Research Awards – Think Big, Agentic AI, and AWS AI Ads (Reviewer and Advisor)</td>
       <td>2025</td>
@@ -102,6 +112,11 @@ nav_order: 2
     <tr>
       <td><a href="https://ipin-conference.org/2025/index.html" target="_blank">IEEE IPIN</a></td>
       <td>International Conference on Indoor Positioning and Indoor Navigation</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7782634" target="_blank">IEEE LSENS</a></td>
+      <td>IEEE Sensors Letters</td>
       <td>2025</td>
     </tr>
     <tr>
