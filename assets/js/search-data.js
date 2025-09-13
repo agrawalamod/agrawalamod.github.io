@@ -560,7 +560,7 @@ ninja.data = [{
         title: 'Semantic Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.semanticscholar.org/author/2075308407# your Semantic Scholar ID", "_blank");
+          window.open("https://www.semanticscholar.org/author/2075308407", "_blank");
         },
       },{
         id: 'social-cv',
