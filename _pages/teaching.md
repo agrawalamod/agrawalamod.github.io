@@ -115,8 +115,13 @@ nav_order: 2
       <td>2025</td>
     </tr>
     <tr>
+      <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755" target="_blank">IEEE TMC</a></td>
+      <td>Transactions on Mobile Computing</td>
+      <td>2025</td>
+    </tr>
+    <tr>
       <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7782634" target="_blank">IEEE LSENS</a></td>
-      <td>IEEE Sensors Letters</td>
+      <td>Sensors Letters</td>
       <td>2025</td>
     </tr>
     <tr>
