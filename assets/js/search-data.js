@@ -475,6 +475,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_8/";
+            },},{id: "news-podcast-guest-the-rise-of-ambient-intelligence-in-smart-homes-on-the-master-integrator",
+          title: 'Podcast Guest: The Rise of Ambient Intelligence in Smart Homes on The Master...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_9/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
