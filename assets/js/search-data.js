@@ -463,6 +463,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_10/";
+            },},{id: "news-ieee-computer-society-top-30-early-career-professionals-2025",
+          title: 'IEEE Computer Society Top 30 Early Career Professionals (2025)',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_11/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
