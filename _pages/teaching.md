@@ -13,9 +13,9 @@ nav_order: 2
   width: 100%;
   margin-bottom: 0.2rem;
 }
-.teaching-table td:nth-child(1) { width: 20%; }
+.teaching-table td:nth-child(1) { width: 18%; }
 .teaching-table td:nth-child(2) { width: 32%; }
-.teaching-table td:nth-child(3) { width: 32%; }
+.teaching-table td:nth-child(3) { width: 34%; }
 .teaching-table td:nth-child(4) { width: 16%; text-align: right; }
 .teaching-table td {
   padding: 0.1rem 0.5rem;
@@ -28,9 +28,9 @@ nav_order: 2
   width: 100%;
   margin-bottom: 0.2rem;
 }
-.service-table td:nth-child(1) { width: 20%; }
-.service-table td:nth-child(2) { width: 73%; }
-.service-table td:nth-child(3) { width: 7%; text-align: right; }
+.service-table td:nth-child(1) { width: 18%; }
+.service-table td:nth-child(2) { width: 67%; }
+.service-table td:nth-child(3) { width: 15%; text-align: right; }
 .service-table td {
   padding: 0.1rem 0.5rem;
   line-height: 1.0;
@@ -80,14 +80,19 @@ nav_order: 2
       <td>2025</td>
     </tr>
     <tr>
-      <td><a href="https://www.sigmobile.org/mobisys/2025/  " target="_blank">ACM MobiSys</a></td>
+      <td><a href="https://www.sigmobile.org/mobisys/2025/" target="_blank">ACM MobiSys</a></td>
       <td>International Conference on Mobile Systems, Applications, and Services</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr class="sub-event">
       <td>↳ <a href="https://envsensys.github.io/2025/" target="_blank">EnvSys</a></td>
       <td>International Workshop on Environmental Sensing Systems for Smart Cities</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
+    </tr>
+    <tr class="sub-event">
+      <td>↳ <a href="https://netaisys.github.io/" target="_blank">NetAISys</a></td>
+      <td>International Workshop on Networked AI Systems</td>
+      <td>2026</td>
     </tr>
     <tr class="sub-event">
       <td>↳ <a href="https://www.sigmobile.org/mobisys/2025/rising_stars/" target="_blank">Rising Stars</a></td>
@@ -107,12 +112,12 @@ nav_order: 2
     <tr>
       <td><a href="https://www.amazon.science/research-awards/call-for-proposals" target="_blank">Amazon ARA</a></td>
       <td>Amazon Research Awards – Think Big, Agentic AI, and AWS AI Ads (Reviewer and Advisor)</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr>
       <td><a href="https://ipin-conference.org/2025/index.html" target="_blank">IEEE IPIN</a></td>
       <td>International Conference on Indoor Positioning and Indoor Navigation</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr>
       <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755" target="_blank">IEEE TMC</a></td>
@@ -127,7 +132,7 @@ nav_order: 2
     <tr>
       <td><a href="https://www.balkancom.info/2025/" target="_blank">IEEE BalkanCom</a></td>
       <td>International Balkan Conference on Communications and Networking</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr>
       <td><a href="https://icetce.skit.ac.in/index" target="_blank">IEEE ICETCE</a></td>

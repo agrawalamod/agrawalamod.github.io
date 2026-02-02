@@ -4,12 +4,12 @@
     {% assign commentary_news = news | where: 'category', 'commentary' %}
     {% assign personal_news = news | where: 'category', 'personal' %}
 
-    <!-- Media Commentary Section -->
-    {% if commentary_news.size > 0 %}
-      <div class="news-section mb-4">
-        <h4 class="news-section-title">Media Features</h4>
+    <!-- Personal News Section -->
+    {% if personal_news.size > 0 %}
+      <div class="news-section">
+        <h4 class="news-section-title">Personal News</h4>
         <div class="news-container">
-          {% for item in commentary_news %}
+          {% for item in personal_news %}
             <div class="news-item mb-2">
               <div class="news-header d-flex justify-content-between align-items-center mb-1">
                 <span class="news-date text-muted">{{ item.date | date: '%b %d, %Y' }}</span>
@@ -52,12 +52,12 @@
       </div>
     {% endif %}
 
-    <!-- Personal News Section -->
-    {% if personal_news.size > 0 %}
-      <div class="news-section">
-        <h4 class="news-section-title">Personal News</h4>
+    <!-- Media Commentary Section -->
+    {% if commentary_news.size > 0 %}
+      <div class="news-section mb-4">
+        <h4 class="news-section-title">Media Features</h4>
         <div class="news-container">
-          {% for item in personal_news %}
+          {% for item in commentary_news %}
             <div class="news-item mb-2">
               <div class="news-header d-flex justify-content-between align-items-center mb-1">
                 <span class="news-date text-muted">{{ item.date | date: '%b %d, %Y' }}</span>
