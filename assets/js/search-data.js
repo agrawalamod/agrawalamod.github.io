@@ -468,6 +468,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_11/";
+            },},{id: "news-featured-by-amazon-careers-on-ai-innovation",
+          title: 'Featured by Amazon Careers on AI Innovation',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_12/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
