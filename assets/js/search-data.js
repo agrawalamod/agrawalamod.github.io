@@ -473,6 +473,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_12/";
+            },},{id: "news-featured-by-ieee-computer-society",
+          title: 'Featured by IEEE Computer Society',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_13/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
