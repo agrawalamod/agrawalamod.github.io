@@ -122,7 +122,7 @@ nav_order: 2
     <tr>
       <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755" target="_blank">IEEE TMC</a></td>
       <td>Transactions on Mobile Computing</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr>
       <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7782634" target="_blank">IEEE LSENS</a></td>
@@ -167,7 +167,7 @@ nav_order: 2
     <tr class="sub-event">
       <td>↳ <a href="https://sites.google.com/view/isiot-2025/home?authuser=0" target="_blank">ISIoT</a></td>
       <td>International Workshop on Intelligent Systems for the Internet of Things</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr class="sub-event">
       <td>↳ <a href="https://hiemi-workshop.github.io/2025/#organization" target="_blank">HIEMI</a></td>
