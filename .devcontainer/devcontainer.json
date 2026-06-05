@@ -2,9 +2,14 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
   "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "runArgs": ["--name", "agrawalamod-github-io"],
+
   "features": {
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
       "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
