@@ -36,12 +36,13 @@
                   <div class="news-images-gallery" data-images="{{ item.images | jsonify | escape }}">
                     {% assign image_count = item.images.size %}
                     <div class="image-thumbnail" onclick="openImageModal(this)">
-                      <img src="{{ item.images[0] | relative_url }}" class="gallery-image" alt="News image" loading="lazy">
-                      <div class="overlay">
-                        {% if image_count > 0 %}
-                          <span class="image-count">{{ image_count | minus: 0 }}</span>
-                        {% endif %}
-                      </div>
+                      {% assign img_path = item.images[0] | split: '.' %}
+                      <img src="{{ img_path[0] }}-480.webp" class="gallery-image" alt="News image" loading="lazy">
+                      {% if image_count > 1 %}
+                        <div class="overlay">
+                          <span class="image-count">{{ image_count }}</span>
+                        </div>
+                      {% endif %}
                     </div>
                   </div>
                 {% endif %}
@@ -84,12 +85,13 @@
                   <div class="news-images-gallery" data-images="{{ item.images | jsonify | escape }}">
                     {% assign image_count = item.images.size %}
                     <div class="image-thumbnail" onclick="openImageModal(this)">
-                      <img src="{{ item.images[0] | relative_url }}" class="gallery-image" alt="News image" loading="lazy">
-                      <div class="overlay">
-                        {% if image_count > 0 %}
-                          <span class="image-count">{{ image_count | minus: 0 }}</span>
-                        {% endif %}
-                      </div>
+                      {% assign img_path = item.images[0] | split: '.' %}
+                      <img src="{{ img_path[0] }}-480.webp" class="gallery-image" alt="News image" loading="lazy">
+                      {% if image_count > 1 %}
+                        <div class="overlay">
+                          <span class="image-count">{{ image_count }}</span>
+                        </div>
+                      {% endif %}
                     </div>
                   </div>
                 {% endif %}
