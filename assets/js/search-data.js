@@ -478,6 +478,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_13/";
+            },},{id: "news-residential-tech-today-expert-commentary-on-ai-driven-adaptive-lighting-for-health-and-well-being",
+          title: 'Residential Tech Today – Expert Commentary on AI-Driven Adaptive Lighting for Health and...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_7/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
