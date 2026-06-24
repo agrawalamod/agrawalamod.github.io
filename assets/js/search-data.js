@@ -478,6 +478,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_13/";
+            },},{id: "news-featured-on-inside-amazon-amp-amazon-careers",
+          title: 'Featured on Inside Amazon &amp;amp; Amazon Careers',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_14/";
             },},{id: "news-residential-tech-today-expert-commentary-on-ai-driven-adaptive-lighting-for-health-and-well-being",
           title: 'Residential Tech Today – Expert Commentary on AI-Driven Adaptive Lighting for Health and...',
           description: "",
