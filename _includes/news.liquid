@@ -13,7 +13,17 @@
             <div class="news-item mb-2">
               <div class="news-header d-flex justify-content-between align-items-center mb-1">
                 <span class="news-date text-muted">{{ item.date | date: '%b %d, %Y' }}</span>
-                {% if item.link %}
+                {% if item.youtube or item.linkedin %}
+                  <span class="news-links">
+                    {% if item.youtube -%}
+                      <a href="{{ item.youtube }}" class="news-link" target="_blank">YouTube</a>
+                    {%- endif %}
+                    {% if item.youtube and item.linkedin %} | {% endif %}
+                    {% if item.linkedin -%}
+                      <a href="{{ item.linkedin }}" class="news-link" target="_blank">LinkedIn</a>
+                    {%- endif %}
+                  </span>
+                {% elsif item.link %}
                   <a href="{{ item.link }}" class="news-link" target="_blank">Read More</a>
                 {% endif %}
               </div>
@@ -62,7 +72,17 @@
             <div class="news-item mb-2">
               <div class="news-header d-flex justify-content-between align-items-center mb-1">
                 <span class="news-date text-muted">{{ item.date | date: '%b %d, %Y' }}</span>
-                {% if item.link %}
+                {% if item.youtube or item.linkedin %}
+                  <span class="news-links">
+                    {% if item.youtube -%}
+                      <a href="{{ item.youtube }}" class="news-link" target="_blank">YouTube</a>
+                    {%- endif %}
+                    {% if item.youtube and item.linkedin %} | {% endif %}
+                    {% if item.linkedin -%}
+                      <a href="{{ item.linkedin }}" class="news-link" target="_blank">LinkedIn</a>
+                    {%- endif %}
+                  </span>
+                {% elsif item.link %}
                   <a href="{{ item.link }}" class="news-link" target="_blank">Read More</a>
                 {% endif %}
               </div>
