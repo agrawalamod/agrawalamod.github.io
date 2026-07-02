@@ -137,7 +137,7 @@ nav_order: 2
     <tr>
       <td><a href="https://icetce.skit.ac.in/index" target="_blank">IEEE ICETCE</a></td>
       <td>International Conference on Emerging Technologies in Computer Engineering</td>
-      <td>2025</td>
+      <td>2025, 2026</td>
     </tr>
     <tr>
       <td><a href="https://dcoss.org/dcoss2025/" target="_blank">IEEE DCOSS-IoT</a></td>
