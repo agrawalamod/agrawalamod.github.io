@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Select projects across Industry and Academia (2016—2025)
+description: Research and engineering across industry and academia since 2015
 nav: true
 nav_order: 4
 display_categories: [Industry, Academia]
