@@ -36,6 +36,19 @@ latest_posts:
   color: var(--global-hover-color) !important;
 }
 
+/* Reduce the white space above the name/header on this page */
+.post-header {
+  margin-top: -2rem;
+}
+.post-title {
+  margin-top: 0;
+}
+
+/* Tighten the space between the social links and the timeline */
+article hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 </style>
 
 <p>I am an Applied Scientist at Amazon Lab126, focusing on mobile computing, wireless sensing, edge intelligence, and their integration with Alexa's generative AI models. I specialize in sensing technologies with applications in smart home automation, through proximity-based interactions and real-time indoor localization.</p>
