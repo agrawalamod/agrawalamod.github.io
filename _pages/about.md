@@ -42,7 +42,7 @@ latest_posts:
 
 As a founding member of the team developing Alexa's spatial awareness capabilities, my work enables AI systems to interpret physical presence and spatial context, offering novel context-aware interactions in real-world applications.
 
-I also serve as Vice-Chair of the Proximity Ranging Tiger Team at the <a href='https://csa-iot.org/'>Connectivity Standards Alliance</a> (CSA), where I help bring spatial intelligence to the Matter ecosystem. Working with industry partners, our goal is to offer proximity detection, wireless ranging, localization, and the spatial context they enable through standardized and interoperable methods across connected devices throughout the industry.
+I also serve as Vice-Chair and Contributor of the Proximity Ranging Tiger Team at the <a href='https://csa-iot.org/'>Connectivity Standards Alliance</a> (CSA), where I help bring spatial intelligence to the Matter ecosystem. Working with industry partners, we offer proximity detection, wireless ranging, and localization through standardized and interoperable methods across connected devices throughout the industry.
 
 Prior to Amazon, I was a graduate student at the University of Illinois at Urbana-Champaign (UIUC), advised by <a href='https://croy.web.engr.illinois.edu/'>Prof. Romit Roy Choudhury</a>. My Thesis (2019) focused on problems in mobile and wearable computing, wireless sensing, user tracking, and indoor localization.
 
