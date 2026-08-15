@@ -1,5 +1,35 @@
 ---
 ---
+@inproceedings{agrawal2026headsense,
+  bibtex_show = {true},
+  abbr      = {ACM HumanSys (MobiCom '26)},
+  author    = {Amod K. Agrawal and Ashutosh Dhekne and Romit Roy Choudhury},
+  title     = {HeadSense: Head Orientation Tracking for AI Wearables using Ultra-Wideband Ranging},
+  abstract  = {AI wearables (smart glasses, pins, pendants, and earbuds) use head gestures for interaction, yet lack a reliable, continuous measure of head-to-torso orientation. Such a measurement would enable temporal attention context for AI assistants, allowing them to infer sustained visual attention, disambiguate spatial commands, and filter out incidental head movements. IMU-based tracking drifts over time, limiting it to transient gesture detection such as nods and shakes. Magnetometer-based yaw correction fails indoors near ferrous materials and speaker magnets common in wearable devices. We present HeadSense, a necklace-like wearable that uses ultra-wideband (UWB) radios to continuously track head orientation relative to the torso with bounded, non-accumulating error. HeadSense introduces a wired reference path between chest-mounted transmitters and head-worn receivers, enabling relative time-of-flight measurements with sub-centimeter precision. A four-stage signal processing pipeline combines channel impulse response (CIR) interpolation, template matching, phase refinement, and IMU-based ambiguity resolution to reduce the typical 10 cm UWB ranging error to a median of 5 mm and achieve a median orientation error of 6.5°, validated against Vicon motion capture ground truth. HeadSense provides an infrastructure-free, body-centric orientation sensing capability for AI wearables without requiring cameras or external tracking systems.},
+  booktitle = {Proceedings of the International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems (HumanSys '26), co-located with ACM MobiCom 2026},
+  month     = August,
+  year      = {2026},
+  location  = {Austin, TX, USA},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  note      = {Accepted August 14, 2026}
+}
+
+@inproceedings{agrawal2026homelm,
+  bibtex_show = {true},
+  abbr      = {ACM HumanSys (MobiCom '26)},
+  author    = {Amod K. Agrawal},
+  title     = {Vision: HomeLM for Ambient Intelligence in the Smart Home},
+  abstract  = {Smart homes hold abundant sensing opportunities, from microphone arrays and presence radars to wearables and everyday device interactions. These modalities rarely add up to a coherent picture of what is happening inside the home. Today's ambient intelligence stitches together many narrow, task-specific models but lacks a unified semantic understanding of the signals they consume. We envision HomeLM, a foundation model that learns to align home-sensing signals with natural language, so that a single model can describe and reason about human activity across a whole house rather than classifying it one task at a time. This would let a home recognize situations it was never explicitly trained for and act proactively on behalf of its occupants. This paper outlines our vision for HomeLM: how such a model could be trained, the research challenges in realizing it, and the opportunities it brings for the smart home.},
+  booktitle = {Proceedings of the International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems (HumanSys '26), co-located with ACM MobiCom 2026},
+  month     = August,
+  year      = {2026},
+  location  = {Austin, TX, USA},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  note      = {Accepted August 14, 2026}
+}
+
 @article{garcia2018collective,
   bibtex_show = {true},
   abbr        = {Springer EPJ Data Science},
@@ -47,7 +77,7 @@
 
 @inproceedings{agrawal2025aoa,
   bibtex_show = {true},
-  abbr      = {ACM EnvSys (MobiSys'25)},
+  abbr      = {ACM EnvSys (MobiSys '25)},
   author    = {Amod K. Agrawal},
   title     = {Localization using Angle-of-Arrival Triangulation},
   abstract  = {Indoor localization is a long-standing challenge in mobile computing, with significant implications for enabling location-aware and intelligent applications within smart environments such as homes, offices, and retail spaces. As AI assistants such as Amazon Alexa and Google Nest become increasingly pervasive, microphone-equipped devices are emerging as key components of everyday life and home automation. This paper introduces a passive, infrastructure-light system for localizing human speakers using speech signals captured by two or more spatially distributed smart devices. The proposed approach, GCC+, extends the Generalized Cross-Correlation with Phase Transform (GCC-PHAT) method to estimate the Angle-of-Arrival (AoA) of audio signals at each device and applies robust triangulation techniques to infer the speaker’s two-dimensional position. To further improve temporal resolution and localization accuracy, feature-space expansion and subsample interpolation techniques are employed for precise Time Difference of Arrival (TDoA) estimation. The system operates without requiring hardware modifications, prior calibration, explicit user cooperation, or knowledge of the speaker’s signal content, thereby offering a highly practical solution for real-world deployment. Experimental evaluation in a real-world home environment yields a median AoA estimation error of 2.2 degree and a median localization error of 1.25m, demonstrating the feasibility and effectiveness of audio-based localization for enabling context-aware, privacy-preserving ambient intelligence.},

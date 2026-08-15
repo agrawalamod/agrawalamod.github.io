@@ -25,7 +25,9 @@ Bare-metal alternative (needs Ruby + bundler): `bundle exec jekyll serve`.
 
 ## Deployment
 
-**Do not run `bin/deploy` manually for routine updates.** Pushing content to `main` triggers `.github/workflows/deploy.yml`, which builds with Jekyll, purges unused CSS, and publishes the rendered site to the `gh-pages` branch via `github-pages-deploy-action`. The `main` branch holds **source**; `gh-pages` holds **generated output** — never edit `gh-pages` by hand. `.devcontainer/`, READMEs, and other docs are excluded from triggering deploys.
+**Do not run `bin/deploy` manually for routine updates.** Pushing content to `main` triggers `.github/workflows/deploy.yml`, which builds with Jekyll, purges unused CSS, and publishes the rendered site to the `gh-pages` branch via `github-pages-deploy-action`. The `main` branch holds **source**; `gh-pages` holds **generated output** — never edit `gh-pages` by hand. Deploy runs on Ruby 3.3.5 / Python 3.13.
+
+The trigger is a **path allowlist**, not an exclusion list: a push to `main` deploys only if it touches `assets/**`, `_sass/**`, `Gemfile`, `Gemfile.lock`, or a file matching `**.bib`, `**.html`, `**.js`, `**.liquid`, `**/*.md`, or `**.yml`. So `.devcontainer/`, READMEs, and other docs don't trigger a build — but neither does a `.scss` edited outside `_sass/` or a `.json`/`.csv` data file. If a content change doesn't redeploy, check it matches one of these globs.
 
 ## Content architecture
 
