@@ -468,6 +468,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_11/";
+            },},{id: "news-techround-expert-predictions-for-hometech-in-2026",
+          title: 'TechRound – Expert Predictions for HomeTech in 2026',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/expert_commentary_8/";
             },},{id: "news-featured-by-amazon-careers-on-ai-innovation",
           title: 'Featured by Amazon Careers on AI Innovation',
           description: "",
