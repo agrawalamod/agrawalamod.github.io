@@ -585,6 +585,6 @@ ninja.data = [{
         title: 'Cv',
         section: 'Socials',
         handler: () => {
-          window.open("https://drive.google.com/file/d/1I-PNQ0fKvhJj9W1ejlYuwSacwYA90TSg/view?usp=sharing", "_blank");
+          window.open("https://drive.google.com/file/d/1LDPzTSDbFcdxQwSlDX0N5jPvqrEZCwpD/view?usp=sharing", "_blank");
         },
       },];
