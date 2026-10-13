@@ -761,6 +761,40 @@ footer.sticky-bottom {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
+
+        .abbr-tile {
+          position: relative;
+        }
+
+        // Google Scholar citation count, shown as a notification bubble on the venue tile
+        a.citation-bubble {
+          position: absolute;
+          top: -0.45rem;
+          right: -0.45rem;
+          min-width: 1.15rem;
+          height: 1.15rem;
+          padding: 0 0.3rem;
+          border: 1px solid var(--global-theme-color);
+          border-radius: 999px;
+          background-color: var(--global-bg-color);
+          color: var(--global-theme-color);
+          font-size: 0.65rem;
+          font-weight: 700;
+          line-height: calc(1.15rem - 2px);
+          text-align: center;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          transition:
+            transform 0.15s ease,
+            background-color 0.15s ease,
+            color 0.15s ease;
+
+          &:hover {
+            text-decoration: none;
+            transform: scale(1.12);
+            background-color: var(--global-theme-color);
+            color: #fff;
+          }
+        }
       }
 
       .title {

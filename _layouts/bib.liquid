@@ -1,29 +1,51 @@
 ---
 ---
 <div class="row">
+  {% assign gs_citations = '' %}
+  {% if entry.google_scholar_id and site.enable_publication_badges.google_scholar %}
+    {% capture gs_citations %}{% google_scholar_citations site.data.socials.scholar_userid entry.google_scholar_id %}{% endcapture %}
+    {% assign gs_citations = gs_citations | strip %}
+    {% if gs_citations == '0' or gs_citations == 'N/A' %}
+      {% assign gs_citations = '' %}
+    {% endif %}
+  {% endif %}
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-3 abbr">
       {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
+        <div class="abbr-tile">
+          {%- if site.data.venues[entry.abbr] -%}
+            {% assign venue_style = null %}
+            {% if site.data.venues[entry.abbr].color != blank %}
+              {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+            {%- endif -%}
+            <abbr
+              class="badge rounded w-100"
+              {% if venue_style %}
+                {{ venue_style }}
+              {% endif -%}
+            >
+              {% if site.data.venues[entry.abbr].url %}
+                <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              {% else %}
+                <div>{{- entry.abbr -}}</div>
+              {% endif %}
+            </abbr>
+          {% else %}
+            <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          {% endif %}
+          {% if gs_citations != '' %}
+            <a
+              class="citation-bubble"
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Cited by {{ gs_citations }} on Google Scholar"
+              aria-label="Cited by {{ gs_citations }} on Google Scholar"
+            >
+              {{- gs_citations -}}
+            </a>
+          {% endif %}
+        </div>
       {% endif %}
       {% if entry.category %}
         {% assign category_style = null %}
@@ -268,14 +290,6 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
-      {% if entry.google_scholar_id %}
-        <a
-          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
-          class="btn btn-sm z-depth-0"
-          role="button"
-          >Citations ({% google_scholar_citations site.data.socials.scholar_userid entry.google_scholar_id %})</a
-        >
-      {% endif %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
@@ -288,10 +302,8 @@
         {% assign entry_has_dimensions_badge = true %}
       {% endif %}
 
+      {% comment %} Google Scholar citations render as a bubble on the venue tile, not here. {% endcomment %}
       {% assign entry_has_google_scholar_badge = false %}
-      {% if entry.google_scholar_id %}
-        {% assign entry_has_google_scholar_badge = true %}
-      {% endif %}
 
       {% assign entry_has_inspirehep_badge = false %}
       {% if entry.inspirehep_id %}
