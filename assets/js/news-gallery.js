@@ -6,9 +6,16 @@ function openImageModal(element) {
   currentImages = JSON.parse(imagesData);
   currentImageIndex = 0;
 
-  document.getElementById("modalImage").src = currentImages[currentImageIndex];
+  showCurrentImage();
   document.getElementById("imageModal").style.display = "block";
   document.body.style.overflow = "hidden";
+}
+
+function showCurrentImage() {
+  document.getElementById("modalImage").src = currentImages[currentImageIndex];
+  const counter = document.getElementById("modalCounter");
+  counter.textContent = `${currentImageIndex + 1} of ${currentImages.length}`;
+  counter.style.display = currentImages.length > 1 ? "block" : "none";
 }
 
 function closeImageModal() {
@@ -19,14 +26,14 @@ function closeImageModal() {
 function nextImage() {
   if (currentImageIndex < currentImages.length - 1) {
     currentImageIndex++;
-    document.getElementById("modalImage").src = currentImages[currentImageIndex];
+    showCurrentImage();
   }
 }
 
 function prevImage() {
   if (currentImageIndex > 0) {
     currentImageIndex--;
-    document.getElementById("modalImage").src = currentImages[currentImageIndex];
+    showCurrentImage();
   }
 }
 
