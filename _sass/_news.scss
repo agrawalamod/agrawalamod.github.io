@@ -153,5 +153,9 @@
     color: var(--global-text-color-light);
     margin-bottom: 0;
     font-size: 0.9rem;
+
+    em {
+      color: inherit;
+    }
   }
 }
