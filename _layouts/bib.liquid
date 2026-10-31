@@ -47,6 +47,9 @@
           {% endif %}
         </div>
       {% endif %}
+      {% if entry.award_name %}
+        <abbr class="badge rounded w-100 award">★ {{ entry.award_name }}</abbr>
+      {% endif %}
       {% if entry.category %}
         {% assign category_style = null %}
         {% if entry.category == 'academic' %}
