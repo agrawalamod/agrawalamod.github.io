@@ -1,10 +1,14 @@
 ---
 layout: page
-title: "HeadTrack: Tracking head orientation using wireless signals"
-description: "Head orientation tracking is critical for a range of mobile computing applications, including AR/VR, assistive technologies, and spatial interaction. Traditional solutions rely on infrastructure-based systems involving cameras, lasers, or high-end inertial sensors, which limits user mobility and constrains deployment to fixed environments.<br><br>HeadTrack presents a wearable, infrastructure-free system that estimates a user's head orientation using wireless signals. The system consists of a necklace-like wearable with a headset and chest-piece, each embedded with ultra-wideband (UWB) radios. By precisely estimating multiple distances between the headset and torso, HeadTrack infers the 3D orientation of the head relative to the body.<br><br>To overcome the typical ~10 cm ranging limitation of UWB, the system introduces a reference-assisted design by splitting the transmitted signal across both wireless and wired paths. This approach reduces the ranging error to approximately 5 mm. Additionally, an onboard IMU is used to resolve phase ambiguities and ensure consistent tracking over time.<br><br>Evaluated using ViCon ground truth data, HeadTrack achieves a head orientation tracking accuracy of 6.5°, offering a portable, occlusion-free, and cost-effective alternative to conventional motion capture systems. The system demonstrates how body-worn UWB sensing can enable fine-grained, infrastructure-free motion tracking in real-world settings."
+title: "HeadSense: Head Orientation Tracking for AI Wearables using Ultra-Wideband Ranging"
+description: "AI wearables such as smart glasses, pins, pendants, and earbuds rely on head gestures for interaction, yet they lack a reliable, continuous measure of where the head points relative to the torso. That signal gives AI assistants temporal attention context: it lets them infer sustained visual attention, resolve spatial commands, and filter out incidental head movements. IMU-based tracking drifts over time, and magnetometer correction fails indoors near ferrous materials and the speaker magnets common in wearables.<br><br>HeadSense is a necklace-like wearable that uses ultra-wideband (UWB) radios to track head orientation relative to the torso with bounded, non-accumulating error. A wired reference path between chest-mounted transmitters and head-worn receivers enables relative time-of-flight measurements with sub-centimeter precision.<br><br>A four-stage signal processing pipeline combines channel impulse response (CIR) interpolation, template matching, phase refinement, and IMU-based ambiguity resolution. It reduces the typical 10 cm UWB ranging error to a median of 5 mm and reaches a median orientation error of 6.5°, validated against Vicon motion capture. HeadSense gives AI wearables an infrastructure-free, body-centric orientation signal without cameras or external tracking.<br><br>The work began as HeadTrack, my M.S. thesis at UIUC (2019), and was published as HeadSense at ACM HumanSys '26, co-located with MobiCom 2026."
 img: assets/img/projects/headtrack.png
 importance: 2
 organization: University of Illinois at Urbana-Champaign
 category: Academia
-redirect: https://hdl.handle.net/2142/105242
+links:
+  - name: Thesis
+    url: https://hdl.handle.net/2142/105242
+  - name: Paper
+    url: https://doi.org/10.1145/3842436.3843787
 ---

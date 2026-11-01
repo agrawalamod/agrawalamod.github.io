@@ -673,6 +673,19 @@ footer.sticky-bottom {
     }
   }
 
+  // Link buttons for cards with several links (same look as publication buttons)
+  .project-links a.btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding: 0.25rem 1rem;
+    margin: 0 0.5rem 0 0;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
+  }
+
   .col {
     padding-bottom: 1rem;
   }
