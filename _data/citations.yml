@@ -1,0 +1,18 @@
+# Google Scholar citation counts, keyed by each paper's google_scholar_id in papers.bib.
+# Google Scholar blocks GitHub's build servers, so the site reads counts from this file.
+# Refresh with bin/update_citations.py (runs weekly on Amod's Mac via bin/weekly_citations.sh).
+
+updated: 2026-11-01
+counts:
+  "hqOjcs7Dif8C": 0
+  "0EnyYjriUFMC": 0
+  "9yKSN-GCB0IC": 45
+  "u5HHmVD_uO8C": 4
+  "IjCSPb-OGe4C": 0
+  "LkGwnXOMwfcC": 6
+  "UebtZRa9Y70C": 0
+  "W7OEmFMy1HYC": 0
+  "ufrVoPGSRksC": 0
+  "Y0pCki6q_DkC": 0
+  "Tyk-4Ss8FVUC": 0
+  "roLk4NBRz8UC": 1

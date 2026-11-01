@@ -45,7 +45,9 @@ Theme internals (edit only when intentionally customizing the theme): `_layouts/
 
 ## Custom plugins (`_plugins/`)
 
-Ruby plugins that run at build time and add behavior beyond stock Jekyll. Notably: `google-scholar-citations.rb` and `inspirehep-citations.rb` (fetch live citation counts), `external-posts.rb` (pull external blog posts), `details.rb` (collapsible blocks), `cache-bust.rb`, `hide-custom-bibtex.rb`. Network-fetching plugins cache results in `.tweet-cache/` and similar; a clean build may hit external services.
+Ruby plugins that run at build time and add behavior beyond stock Jekyll. Notably: `inspirehep-citations.rb` (fetches live citation counts), `external-posts.rb` (pull external blog posts), `details.rb` (collapsible blocks), `cache-bust.rb`, `hide-custom-bibtex.rb`. Network-fetching plugins cache results in `.tweet-cache/` and similar; a clean build may hit external services.
+
+**Google Scholar citations are cached, not fetched at build time.** Scholar returns 403 to GitHub's build servers, so `google-scholar-citations.rb` reads counts from `_data/citations.yml` (keyed by each entry's `google_scholar_id`). `bin/update_citations.py` refreshes that file from the Scholar profile and must run from a machine Scholar allows. `bin/weekly_citations.sh` runs it every Monday via a LaunchAgent on Amod's Mac, working in a sparse clone at `~/.local/share/agrawalamod-citations` (macOS blocks background jobs from `~/Documents`), and pushes to `main` only when a count changes. Because that job pushes, **`git pull --rebase` before pushing from the main working copy.** Counts render as a bubble on the venue tile (`_layouts/bib.liquid`), hidden when 0 or missing.
 
 ## Conventions
 
