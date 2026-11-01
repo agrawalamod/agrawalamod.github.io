@@ -8,5 +8,11 @@ img3: assets/img/projects/aoa_3.png
 importance: 3
 organization: University of Illinois at Urbana-Champaign, Amazon Lab126
 category: Academia
-redirect: https://envsensys.github.io/2025/
+links:
+  - name: Paper
+    url: https://doi.org/10.1145/3742460.3742984
+  - name: arXiv
+    url: https://arxiv.org/abs/2508.16908
+  - name: Slides
+    url: https://drive.google.com/file/d/1Iqf1Drt0oOLicnqPs1ARRC76bgIXpH2j/view?usp=sharing
 ---

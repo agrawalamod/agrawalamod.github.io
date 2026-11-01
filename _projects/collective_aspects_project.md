@@ -9,5 +9,7 @@ organization: IIIT-Delhi, ETH-Zurich
 importance: 1
 category: Academia
 related_publications: true
-redirect: https://doi.org/https://doi.org/10.1140/epjds/s13688-018-0130-3
+links:
+  - name: Paper
+    url: https://doi.org/10.1140/epjds/s13688-018-0130-3
 ---
