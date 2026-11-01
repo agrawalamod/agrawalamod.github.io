@@ -3,7 +3,9 @@
 
 Google Scholar blocks GitHub's build servers, so the site reads citation counts
 from this cache instead of fetching them at build time. Run this from a machine
-Scholar allows (Amod's Mac). bin/weekly_citations.sh runs it once a week.
+Scholar allows (Amod's Mac) before pushing a site update, or any time manually:
+
+    python3 bin/update_citations.py
 
 It fetches the Scholar profile once, keeps counts only for papers that have a
 google_scholar_id in papers.bib, and rewrites the cache only when a count changes.
@@ -23,7 +25,7 @@ CACHE = ROOT / "_data" / "citations.yml"
 HEADER = """\
 # Google Scholar citation counts, keyed by each paper's google_scholar_id in papers.bib.
 # Google Scholar blocks GitHub's build servers, so the site reads counts from this file.
-# Refresh with bin/update_citations.py (runs weekly on Amod's Mac via bin/weekly_citations.sh).
+# Refresh with `python3 bin/update_citations.py` before pushing a site update, or manually.
 """
 
 
