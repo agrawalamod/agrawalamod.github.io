@@ -72,6 +72,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
+          # Pin the series only, never a patch: new runner images ship only the latest 3.3.x.
           ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Python 🐍
