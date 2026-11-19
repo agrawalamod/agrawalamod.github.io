@@ -2,14 +2,14 @@
 # Google Scholar blocks GitHub's build servers, so the site reads counts from this file.
 # Refresh with `python3 bin/update_citations.py` before pushing a site update, or manually.
 
-updated: 2026-11-01
+updated: 2026-11-19
 counts:
-  "hqOjcs7Dif8C": 0
+  "hqOjcs7Dif8C": 1
   "0EnyYjriUFMC": 0
   "9yKSN-GCB0IC": 45
   "u5HHmVD_uO8C": 4
   "IjCSPb-OGe4C": 0
-  "LkGwnXOMwfcC": 6
+  "LkGwnXOMwfcC": 7
   "UebtZRa9Y70C": 0
   "W7OEmFMy1HYC": 0
   "ufrVoPGSRksC": 0
