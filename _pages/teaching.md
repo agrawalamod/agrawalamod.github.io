@@ -130,6 +130,11 @@ nav_order: 2
       <td>2025</td>
     </tr>
     <tr>
+      <td><a href="https://www.sciencedirect.com/journal/smart-health" target="_blank">Elsevier Smart Health</a></td>
+      <td>Smart Health (Journal)</td>
+      <td>2026</td>
+    </tr>
+    <tr>
       <td><a href="https://www.balkancom.info/2025/" target="_blank">IEEE BalkanCom</a></td>
       <td>International Balkan Conference on Communications and Networking</td>
       <td>2025, 2026</td>
